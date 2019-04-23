@@ -6,6 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Launch">
+<<<<<<< HEAD
     <Button
             android:text="Home"
             android:layout_width="0dp"
@@ -44,4 +45,12 @@
             android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toTopOf="@+id/webView" android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent"/>
+=======
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="126dp"
+            tools:layout_editor_absoluteX="102dp" android:id="@+id/textView"/>
+>>>>>>> edb45e32bf61dd02daa19e16b4639033e04b3fcc
 </android.support.constraint.ConstraintLayout>
