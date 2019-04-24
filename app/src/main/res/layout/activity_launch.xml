@@ -5,52 +5,12 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Launch">
-<<<<<<< HEAD
-    <Button
-            android:text="Home"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnHome" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintHorizontal_bias="0.0" android:layout_marginBottom="10dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:textAlignment="center" android:textSize="24sp"/>
-    <Button
-            android:text="Back"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnBack" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
-    <Button
-            android:text="Next"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnNext"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent"/>
-    <WebView
-            android:layout_width="395dp"
-            android:layout_height="594dp" android:layout_marginBottom="10dp"
-            app:layout_constraintBottom_toTopOf="@+id/btnHome" android:layout_marginTop="10dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnNext" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.6"
-            android:id="@+id/webView"/>
-    <TextView
-            android:text="Gates"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView" android:textSize="24sp"
-            android:textAlignment="center" android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toStartOf="@+id/btnNext" app:layout_constraintStart_toEndOf="@+id/btnBack"
-            android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/webView" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent"/>
-=======
+        tools:context="Launch">
 
-    <TextView
-            android:text="TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" tools:layout_editor_absoluteY="126dp"
-            tools:layout_editor_absoluteX="102dp" android:id="@+id/textView"/>
+
+
+
+
+
 >>>>>>> edb45e32bf61dd02daa19e16b4639033e04b3fcc
 </android.support.constraint.ConstraintLayout>
