@@ -9,38 +9,42 @@
     <WebView
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:id="@+id/webGates"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/button2" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/button3" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp"/>
+            app:layout_constraintTop_toBottomOf="@+id/txtUrl"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/txtUrlNav"/>
+    <Button
+            android:text="ir"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnGo" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtUrl"
+            app:layout_constraintTop_toTopOf="parent" android:hint="Digite a URL neste campo" android:textSize="15sp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/btnGo" app:layout_constraintStart_toEndOf="@+id/button4"
+    />
     <Button
             android:text="BACK"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/button" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp"/>
-    <Button
-            android:text="NEXT"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/button2" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
-    <Button
-            android:text="HOME"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/button3" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp" android:textSize="20sp"
-            app:layout_constraintHorizontal_bias="1.0" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:id="@+id/button4" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+    />
     <TextView
-            android:text="GATES"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView" app:layout_constraintStart_toEndOf="@+id/button"
-            android:layout_marginStart="8dp" app:layout_constraintEnd_toStartOf="@+id/button2"
-            android:layout_marginEnd="8dp" android:layout_marginTop="20dp" app:layout_constraintTop_toTopOf="parent"
-            android:textSize="20sp"/>
+            android:text="texto"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:id="@+id/txtUrlNav"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:textAlignment="center"/>
 </android.support.constraint.ConstraintLayout>
