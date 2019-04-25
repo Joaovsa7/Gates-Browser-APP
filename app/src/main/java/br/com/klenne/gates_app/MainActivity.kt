@@ -30,11 +30,17 @@ class MainActivity : AppCompatActivity() {
 
         btnGo.setOnClickListener {
         if (txtUrl.text.isNotEmpty()){
-            var urlDitada = txtUrl.text.toString()
-            urlDitada = "https://" +urlDitada
-            webGates.loadUrl(urlDitada)
-            txtUrl.setText(urlDitada)
+            var urlDigitada = txtUrl.text.toString()
 
+            if (urlDigitada.contains("https://", true) ){ // verifica se a url tem o prefiso https://
+                webGates.loadUrl(urlDigitada)
+                txtUrl.setText(urlDigitada)
+
+            }else{
+                urlDigitada = "https://" + urlDigitada
+                webGates.loadUrl(urlDigitada)
+                txtUrl.setText(urlDigitada)
+            }
         }else{
             Toast.makeText(this, "Digite uma url !",Toast.LENGTH_LONG).show()
             //load default
@@ -43,3 +49,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
