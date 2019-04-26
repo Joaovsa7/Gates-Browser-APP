@@ -26,6 +26,9 @@ class MainActivity : AppCompatActivity() {
         acessoSharedPref = getSharedPreferences("meusDados", Context.MODE_PRIVATE)
         editorSharedPref = acessoSharedPref!!.edit() // !!garanti que tera algo (!! igual a forced)
 
+        //Logando em um endereço web
+        wvGates.loadUrl("https://www.google.com.br")
+
         //Mecher na internet pelo app
 
 
@@ -54,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
         } )
 
-        //Zoom na webView
+        //WebView com zoom
         wvGates.settings.setSupportZoom(true)
         wvGates.settings.builtInZoomControls = true
         wvGates.settings.displayZoomControls = true
@@ -63,6 +66,8 @@ class MainActivity : AppCompatActivity() {
         txtUrl.setOnClickListener {
             txtUrl.selectAll()
         }
+
+
 
         //Programando os botões
 
@@ -76,6 +81,12 @@ class MainActivity : AppCompatActivity() {
             else Toast.makeText(this, "Sem histórico disponível", Toast.LENGTH_SHORT).show()
 
         }
+
+        //Botão home
+        btnHome.setOnClickListener {
+            wvGates.loadUrl("https://www.google.com.br")
+        }
+
 
 
         //Botão ir

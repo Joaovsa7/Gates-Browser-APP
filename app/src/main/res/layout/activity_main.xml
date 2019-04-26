@@ -5,23 +5,23 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity" android:background="#605858">
     <WebView
             android:layout_width="0dp"
-            android:layout_height="610dp"
+            android:layout_height="545dp"
             android:id="@+id/wvGates"
-            android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/txtUrl"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintVertical_bias="0.041"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toTopOf="@+id/btnHome" android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"/>
     <Button
             android:text="ir"
             android:layout_width="70dp"
             android:layout_height="40dp"
             android:id="@+id/btnGo" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp" android:layout_marginEnd="8dp"/>
     <EditText
             android:layout_width="0dp"
             android:layout_height="40dp"
@@ -31,19 +31,20 @@
             app:layout_constraintTop_toTopOf="parent" android:hint="Digite a URL neste campo" android:textSize="15sp"
             android:textAlignment="center"
             app:layout_constraintEnd_toStartOf="@+id/btnGo" app:layout_constraintStart_toEndOf="@+id/btnVoltar"
-    />
+            android:background="@android:color/background_light" android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
     <Button
             android:text="Voltar"
             android:layout_width="70dp"
             android:layout_height="40dp"
             android:id="@+id/btnVoltar" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-    />
+            android:layout_marginTop="8dp" android:layout_marginStart="8dp"/>
     <Button
             android:text="Avançar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             android:id="@+id/btnAvancar"/>
     <Button
@@ -52,12 +53,12 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/btnAtualizar" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="8dp"/>
     <Button
             android:text="Home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btnHome" android:layout_marginBottom="16dp"
+            android:id="@+id/btnHome" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@+id/btnAtualizar"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toEndOf="@+id/btnAvancar"
             android:layout_marginStart="8dp"/>
